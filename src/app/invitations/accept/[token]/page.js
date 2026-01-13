@@ -93,7 +93,7 @@ export default function AcceptInvitationPage({ params }) {
                 setSuccess(true);
                 // Redirect to dashboard after 2 seconds
                 setTimeout(() => {
-                    router.push('/dashboard');
+                    router.push('/');
                 }, 2000);
             } else {
                 if (data.requiresAuth) {
@@ -147,7 +147,7 @@ export default function AcceptInvitationPage({ params }) {
                     <CardContent>
                         <div className="text-center">
                             <p className="text-gray-600 mb-6">{error.message}</p>
-                            <Button onClick={() => router.push('/dashboard')}>
+                            <Button onClick={() => router.push('/')}>
                                 Go to Dashboard
                             </Button>
                         </div>
